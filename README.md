@@ -1,2 +1,2 @@
 # Node-Template
-A template project using Node, Express and MySQL
+A template REST API using Node, Express and MySQL
