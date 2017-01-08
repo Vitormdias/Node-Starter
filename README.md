@@ -3,31 +3,33 @@
 
 ### A template REST API using Node, Express and MySQL
 
-#### Como rodar o projeto:
+#### How to run the project:
 
-* Primeiro baixe o projeto:
-```bash
+* First download the project:
+```
     git clone https://github.com/Vitormdias/Node-Template.git
     cd Node-Template
 ```
 
-* Então caso não tenha o node instalado ([Manual Instalação Node](https://nodejs.org/en/download/)), caso tenha
+* If you don't have Node installed yet ([Node Installation Guide](https://nodejs.org/en/download/)), if you have it
 ```
     npm install
 ```
 
-* Os scripts são:
-    * Rodar o projeto
+* The scripts are:
+    * Run the project
     ```
         npm start
     ```
 
-    * Rodar o projeto com auto-refresh (nodemon)
+    * Run the project with auto-refresh (nodemon)
     ```
         npm run start-dev
     ```
 
-    * Rodar os testes automatizados:
+    * Run the tests:
     ```
         npm test
     ```
+
+#### This is just a simple template if you have any ideas to make it better, please feel free to send a Pull Request
