@@ -1,5 +1,5 @@
 {
-  "name": "template-node-api",
+  "name": "starter-node-api",
   "version": "1.0.0",
   "description": "Template REST API",
   "main": "index.js",

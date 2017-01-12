@@ -1,14 +1,14 @@
-## TEMPLATE REST API
-[![contributions welcome](http://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/snug-lab/node-examples/issues) [![Build Status](https://travis-ci.org/Vitormdias/Node-Template.svg?branch=master)](https://travis-ci.org/Vitormdias/Node-Template)
+## STARTER REST API
+[![contributions welcome](http://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Vitormdias/node-starter/issues) [![Build Status](https://travis-ci.org/Vitormdias/Node-Starter.svg?branch=master)](https://travis-ci.org/Vitormdias/Node-Starter)
 
-### A template REST API using Node, Express and MySQL
+### A starter for a REST API using Node, Express and MySQL
 
 #### How to run the project:
 
 * First download the project:
 ```
-    git clone https://github.com/Vitormdias/Node-Template.git
-    cd Node-Template
+    git clone https://github.com/Vitormdias/node-starter.git
+    cd Node-Starter
 ```
 
 * If you don't have Node installed yet ([Node Installation Guide](https://nodejs.org/en/download/)), if you have it
@@ -32,4 +32,4 @@
         npm test
     ```
 
-#### This is just a simple template if you have any ideas to make it better, please feel free to send a Pull Request
+#### This is just a simple starter if you have any ideas to make it better, please feel free to open issues and send Pull Requests

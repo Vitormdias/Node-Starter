@@ -5,7 +5,7 @@ describe("Routes: Index", () => {
             .expect(200)
             .end((err, res) => {
                 const expected =  {
-                    'api': 'Node-Template',
+                    'api': 'Node-Starter',
                     'status': 'OK'
                 }
 
