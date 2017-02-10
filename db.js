@@ -1,14 +1,19 @@
 import mysql from 'mysql';
 
-function createDbConnection() {
-    return mysql.createConnection({
+module.exports = app => {
+
+    const connection = mysql.createConnection({
         host: "localhost",
         user: "root",
         password : "12345678",
         database: ""
     });
-}
 
-module.exports = app => {
-    return createDbConnection;
+    connection.connect(function(err) {
+        if (err)
+            throw err
+        console.log('You are now connected...')
+    });
+
+    return connection;
 }
