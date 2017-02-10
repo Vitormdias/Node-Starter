@@ -9,11 +9,5 @@ module.exports = app => {
         database: ""
     });
 
-    connection.connect(function(err) {
-        if (err)
-            throw err
-        console.log('You are now connected...')
-    });
-
     return connection;
 }
