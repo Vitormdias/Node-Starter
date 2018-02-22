@@ -4,33 +4,42 @@
   "description": "Template REST API",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
-    "start-dev": "nodemon index.js --exec babel-node --presets es2015",
-    "test": "mocha test/**/*.js"
+    "start": "node index.js",
+    "dev": "cross-env NODE_ENV=dev nodemon index.js",
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha api/**/**/*.js --timeout 15000 --exit && codecov"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vitormdias/Node-Template.git"
+    "url": "https://github.com/Vitormdias/Node-Starter.git"
   },
   "keywords": [
     "Node",
-    "Express"
+    "Express",
+    "Starter"
   ],
-  "author": "Vitor Manfre",
+  "author": "Vitor Manfre <vitormd97@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vitormdias/Node-Starter/issues"
+  },
+  "homepage": "https://github.com/Vitormdias/Node-Starter#readme",
   "dependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-es2015": "^6.18.0",
-    "body-parser": "^1.15.2",
-    "consign": "^0.1.2",
-    "express": "^4.14.0",
-    "mysql": "^2.12.0"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "chai-http": "^3.0.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "http-status": "^1.0.1",
+    "mongoose": "^5.0.2"
   },
   "devDependencies": {
-    "babel-register": "^6.18.0",
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "nodemon": "^1.11.0",
-    "supertest": "^2.0.1"
+    "chai": "^4.1.2",
+    "codecov": "^3.0.0",
+    "cross-env": "^5.1.3",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.14.11",
+    "nyc": "^11.4.1",
+    "supertest": "^3.0.0"
   }
 }
