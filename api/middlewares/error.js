@@ -21,19 +21,6 @@ const handler = (err, req, res, next) => {
 
 exports.handler = handler;
 
-exports.converter = (err, req, res, next) => {
-    let convertedError = err;
-
-    if (!(err instanceof APIError)) {
-        convertedError = new APIError({
-            message: err.message,
-            status: err.status,
-        });
-    }
-
-    return handler(convertedError, req, res);
-};
-
 exports.mongoErrorHandler = (error) => {
     if ((error.name === 'BulkWriteError' || error.name === 'MongoError') && error.code === 11000) {
         return new APIError({
