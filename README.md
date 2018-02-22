@@ -1,7 +1,8 @@
 ## STARTER REST API
 [![contributions welcome](http://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Vitormdias/node-starter/issues) [![Build Status](https://travis-ci.org/Vitormdias/Node-Starter.svg?branch=master)](https://travis-ci.org/Vitormdias/Node-Starter) [![Code Climate](https://codeclimate.com/github/Vitormdias/Node-Starter/badges/gpa.svg)](https://codeclimate.com/github/Vitormdias/Node-Starter)
+[![codecov](https://codecov.io/gh/Vitormdias/Node-Starter/branch/master/graph/badge.svg)](https://codecov.io/gh/Vitormdias/Node-Starter)
 
-### A starter for a REST API using Node, Express and MySQL
+### A starter for a REST API using Node, Express and MongoDB
 
 #### How to run the project:
 
@@ -24,7 +25,7 @@
 
     * Run the project with auto-refresh (nodemon)
     ```
-        npm run start-dev
+        npm run dev
     ```
 
     * Run the tests:
