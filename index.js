@@ -1,13 +1,9 @@
-import express from 'express';
-import consign from 'consign';
+const { port, env } = require('./config/vars');
+const app = require('./config/express');
+const mongoose = require('./config/mongoose');
 
-const app = express();
+mongoose.connect();
 
-consign()
-  .include('db.js')
-  .then('libs/middlewares.js')
-  .then('libs/boot.js')
-  .then('routes')
-  .into(app);
+app.listen(port, () => console.info(`server started on port ${port} (${env})`));
 
 module.exports = app;
