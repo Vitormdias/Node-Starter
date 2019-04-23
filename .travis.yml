@@ -1,5 +1,7 @@
 language: node_js
 node_js:
   - "8"
+before_install:
+- npm install -g typescript@1.0
 env:
   - CODECOV_TOKEN=80337197-148f-4743-b6eb-7bf2ccda51b3
